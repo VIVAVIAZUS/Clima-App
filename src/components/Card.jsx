@@ -1,5 +1,7 @@
 import React from 'react';
 import MiniCardTemp from './MiniCardTemp';
+import PropTypes from "prop-types";
+
 
 
 export default function Card(props) {
@@ -20,3 +22,14 @@ export default function Card(props) {
     <img src={`http://openweathermap.org/img/wn/${props.img}@2x.png`} alt="Icono del clima" />
   </div>
 };
+
+
+Card.propTypes={
+  max: PropTypes.number,
+  min: PropTypes.number,
+  name: PropTypes.string,
+  img: PropTypes.string,
+  onClose: PropTypes.func,
+
+
+}
