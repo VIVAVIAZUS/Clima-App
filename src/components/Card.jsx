@@ -1,5 +1,5 @@
 import React from 'react';
-import MiniCardTemp from "./MiniCardTemp"
+
 
 export default function Card(props) {
   // Compruebo si la la propiedad "onClose" contiene una funcion
@@ -15,7 +15,9 @@ export default function Card(props) {
     <h1>{props.name}</h1>
     
     <div>
-      <label>Min</label>
+      <label>Min
+
+      </label>
       <span>{props.min}</span>
     </div>
     <div>
