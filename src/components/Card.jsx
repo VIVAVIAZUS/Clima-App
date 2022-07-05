@@ -13,8 +13,15 @@ export default function Card(props) {
   return <div>
     <button onClick={handleOnClose}>x</button>
     <h1>{props.name}</h1>
-    <MiniCardTemp temp="min" value={props.min}/>
-    <MiniCardTemp temp="max" value={props.min}/>
+    
+    <div>
+      <label>Min</label>
+      <span>{props.min}</span>
+    </div>
+    <div>
+      <label>Max</label>
+      <span>{props.max}</span>
+    </div>
     <img src={`http://openweathermap.org/img/wn/${props.img}@2x.png`} alt="Icono del clima" />
   </div>
 };
