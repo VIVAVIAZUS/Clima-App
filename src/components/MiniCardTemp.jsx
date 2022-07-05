@@ -1,6 +1,6 @@
 import React from 'react'
 
-function MiniCardTemp(temp,value) {
+function MiniCardTemp({temp,value}) {
   return (
     <div>
         <span>{temp}</span>
