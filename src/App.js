@@ -27,7 +27,7 @@ function App() {
       <div>
         <SearchBar
           onSearch={(ciudad) => alert(`estamos en ${ciudad}`)}
-          onSearcha={(ciudad) => alert(`estamos en esta ${ciudad}`)}
+          onSearcha={(ciudad) => alert(`estamos en la ciudad de ${ciudad}`)}
         />
       </div>
     </div>
